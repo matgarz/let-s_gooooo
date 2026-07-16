@@ -1,8 +1,27 @@
 #include <iostream>
 #include "Point.h"
 #include "Triangle.h"
+#include "ManageArray.h"
 
-int main() {
+int main(){
+    //PART 1: ARRAY
+    int size;
+    std::cout << "Enter array size: ";
+    std::cin >> size;
+
+    int* arr = createArray(size);
+    if (arr == nullptr) {
+        std::cout << "Invalid size. Exiting Part 1.\n";
+    } else {
+        initializeArray(arr, size);
+
+        std::cout << "Array contents: ";
+        printArray(arr, size);
+
+        deleteArray(arr);
+    }    
+    
+    //PART 2: GEOMETRY
     // Initialize base tracking structures
     Point nodeA(0, 0, 0);
     Point nodeB(6, 0, 0);
