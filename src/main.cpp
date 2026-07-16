@@ -3,6 +3,11 @@
 #include "Triangle.h"
 #include "ManageArray.h"
 
+// COMP 371:  Assignment 1
+// Team Members:
+// Isabella Barange Garzon (ID: 40283184)
+// Mateo Garzon Velazco (ID: 40277001)
+
 int main(){
     //PART 1: ARRAY
     int size;
